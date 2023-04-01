@@ -28,7 +28,6 @@ class App {
         } 
       }
       $arr = array_values($arr);
-      show($arr);
       call_user_func_array([$myController, $this->method],$arr);
     }
   

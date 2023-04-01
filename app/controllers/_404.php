@@ -2,6 +2,7 @@
 
 class _404 {
   function index(){
-    echo "Page Not Found";
+    $data["title"] = "404";
+    $this->view("404", $data);
   }
 }

@@ -3,12 +3,12 @@
 
 class Home {
   public function index(){
-    echo "Home";
+    echo "Home Page";
   }
   public function edit(){
     echo "Home Edit";
   }
   public function delete(){
-    echo "Home Delete";
+    echo "Home Delete ";
   }
 }

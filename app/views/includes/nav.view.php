@@ -2,15 +2,15 @@
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="<?=ROOT?>" class="logo d-flex align-items-center">
+      <a href="<?= ROOT ?>" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="/zenblog/img/logo.png" alt=""> -->
-        <h1><?=APP_NAME?></h1>
+        <h1><?= APP_NAME ?></h1>
       </a>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="<?=ROOT?>">Blog</a></li>
+          <li><a href="<?= ROOT ?>">Blog</a></li>
           <li><a href="single-post.html">Single Post</a></li>
           <li class="dropdown"><a href="category.html"><span>Categories</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
@@ -31,8 +31,10 @@
             </ul>
           </li>
 
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="<?= ROOT ?>/about">About</a></li>
+          <li><a href="<?= ROOT ?>/contact">Contact</a></li>
+          <li><a href="<?= ROOT ?>/login">Login</a></li>
+          <li><a href="<?= ROOT ?>/signup">Signup</a></li>
         </ul>
       </nav><!-- .navbar -->
 

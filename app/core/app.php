@@ -7,10 +7,10 @@ class App {
     protected $method = "index";
   
     function __construct() {
-      // PARSE URL
+      // PARSE URL ============================================
       $arr = $this->getURL();
       $filename = "../app/controllers/".ucfirst($arr[0]).".php";
-      // CHECK IF FILENAME EXISTS
+      // CHECK IF CONTROLLER FILE EXISTS =============================
       if(file_exists($filename)) {
         require $filename;
         $this->controller = $arr[0];

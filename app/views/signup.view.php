@@ -63,43 +63,40 @@
                     <p class="text-center small">Enter your personal details to create account</p>
                   </div>
 
-                  <form class="row g-3 needs-validation" novalidate>
+                  <form method="POST" class="row g-3 needs-validation" novalidate>
 
-                    <div class="col-12">
+                    <div class="col-6">
                       <label for="yourName" class="form-label">First Name</label>
-                      <input type="text" name="firstname" class="form-control" id="yourName" required>
+                      <input type="text" name="firstname" class="form-control" id="yourName">
                       <div class="invalid-feedback">Please, enter your first name!</div>
                     </div>
-                    <div class="col-12">
+                    <div class="col-6">
                       <label for="yourName2" class="form-label">Last Name</label>
-                      <input type="text" name="lastname" class="form-control" id="yourName2" required>
+                      <input type="text" name="lastname" class="form-control" id="yourName2">
                       <div class="invalid-feedback">Please, enter your last name!</div>
                     </div>
 
                     <div class="col-12">
-                      <label for="yourEmail" class="form-label">Your Email</label>
-                      <input type="email" name="email" class="form-control" id="yourEmail" required>
+                      <label for="yourEmail" class="form-label">Email</label>
+                      <input type="email" name="email" class="form-control" id="yourEmail">
                       <div class="invalid-feedback">Please enter a valid Email adddress!</div>
                     </div>
 
-                    <div class="col-12">
-                      <label for="yourUsername" class="form-label">Username</label>
-                      <div class="input-group has-validation">
-                        <span class="input-group-text" id="inputGroupPrepend">@</span>
-                        <input type="text" name="username" class="form-control" id="yourUsername" required>
-                        <div class="invalid-feedback">Please choose a username.</div>
-                      </div>
-                    </div>
 
-                    <div class="col-12">
+
+                    <div class="col-6">
                       <label for="yourPassword" class="form-label">Password</label>
-                      <input type="password" name="password" class="form-control" id="yourPassword" required>
+                      <input type="password" name="password" class="form-control" id="yourPassword">
                       <div class="invalid-feedback">Please enter your password!</div>
                     </div>
-
+                    <div class="col-6">
+                      <label for="yourPassword" class="form-label">Confirm Password</label>
+                      <input type="password" name="confirm_password" class="form-control" id="yourPassword">
+                      <div class="invalid-feedback">Please confirm your password!</div>
+                    </div>
                     <div class="col-12">
                       <div class="form-check">
-                        <input class="form-check-input" name="terms" type="checkbox" value="" id="acceptTerms" required>
+                        <input class="form-check-input" name="terms" type="checkbox" value="1" id="acceptTerms">
                         <label class="form-check-label" for="acceptTerms">I agree and accept the <a href="#">terms and conditions</a></label>
                         <div class="invalid-feedback">You must agree before submitting.</div>
                       </div>
